@@ -16,9 +16,3 @@ def health():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
-@app.route("/")
-def home():
-    return jsonify(
-        message="Flask app deployed using GitHub Actions CI/CD",
-        version="1.0"
-    )
